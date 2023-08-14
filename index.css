@@ -1,0 +1,224 @@
+.display-container {
+	padding: 0 30px;
+}
+
+.firstcontainer {
+	background-color: #f2f6f8;
+}
+
+.firstcontainer .content-container {
+	min-height: 600px;
+	background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+		url("./File/31.webp") no-repeat;
+	background-position: center;
+	background-size: cover;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	color: white;
+	background-color: #f2f6f8;
+}
+
+.firstcontainer .content-container .header-text {
+	text-decoration: underline;
+	margin: 10px 0px;
+}
+
+.firstcontainer .text-container {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	border-bottom: 1px solid black;
+	padding: 60px 0;
+}
+
+.secondcontainer {
+	margin-top: 50px;
+	margin-bottom: 50px;
+}
+
+.secondcontainer .img-container {
+	display: flex;
+	width: 100%;
+	justify-content: space-around;
+	gap: 30px;
+}
+
+.secondcontainer .img-container .image {
+	height: 300px;
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.secondcontainer .img-container .image p {
+	background-color: #f4f4f4;
+	color: black;
+	padding: 8px;
+	border-radius: 10px;
+	width: 100px;
+	text-align: center;
+}
+
+.secondcontainer .img-container .travel {
+	background: url("./File/54.jpeg");
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.secondcontainer .img-container .eat {
+	background: url("./File/cuisinessss.jpeg");
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.secondcontainer .img-container .relax {
+	background: url("./File/ayurvedic-spa-and-massage.webp");
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.secondcontainer .text-container {
+	padding-bottom: 30px;
+	border-bottom: 1px solid black;
+}
+
+.secondcontainer .header-text {
+	margin: 80px 0 30px 0;
+}
+
+.secondcontainer .header-text h1 {
+	font-size: 26px;
+}
+
+.thirdcontainer .image-container .flex-container {
+	display: flex;
+	gap: 60px;
+	width: 100%;
+	margin-bottom: 80px;
+}
+
+.thirdcontainer .image-container .flex-container .card-container {
+	width: 350px;
+	height: 500px;
+	perspective: 800px;
+}
+
+.thirdcontainer
+	.image-container
+	.flex-container
+	.card-container:hover
+	> .card {
+	cursor: pointer;
+	transform: rotateY(180deg);
+}
+
+.thirdcontainer
+	.image-container
+	.flex-container
+	.card-container
+	.card {
+	height: 100%;
+	width: 100%;
+	position: relative;
+	transition: transform 1500ms;
+	transform-style: preserve-3d;
+}
+
+.thirdcontainer
+	.image-container
+	.flex-container
+	.card-container
+	.front,
+.thirdcontainer
+	.image-container
+	.flex-container
+	.card-container
+	.text-container {
+	height: 100%;
+	width: 100%;
+	border-radius: 2rem;
+
+	box-shadow: 0 0 5px 2px rgba(50, 50, 50, 0.25);
+	position: absolute;
+	backface-visibility: hidden;
+}
+
+.thirdcontainer
+	.image-container
+	.flex-container
+	.card-container
+	.text-container {
+	background-color: #3a3a3a;
+	transform: rotateY(180deg);
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	color: white;
+	gap: 5rem;
+	padding: 20px;
+}
+
+.thirdcontainer .image-container .flex-container .pashupati {
+	background: url("./File/pashupati.jpeg");
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.thirdcontainer .image-container .flex-container .kapan {
+	background: url("./File/Kopan_Monastery.jpeg");
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.thirdcontainer .image-container .flex-container .thamel {
+	background: url("./File/k1.jpeg");
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.thirdcontainer .image-container .flex-container .kathmandu {
+	background: url("./File/k2.jpeg");
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.thirdcontainer .image-container .flex-container .swoyambhunath {
+	background: url("./File/swyambhu.jpeg");
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.thirdcontainer .image-container .flex-container .boudha {
+	background: url("./File/boudha.jpeg");
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.thirdcontainer .image-container .flex-container .chandragiri {
+	background: url("./File/chandragiri.jpeg");
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.thirdcontainer .image-container .flex-container .budhanilkantha {
+	background: url("./File/budhanilkantha.webp");
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+}

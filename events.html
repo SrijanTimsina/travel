@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta
+			name="viewport"
+			content="width=device-width, initial-scale=1.0"
+		/>
+		<title>Document</title>
+		<link rel="stylesheet" href="global.css" />
+		<link rel="stylesheet" href="events.css" />
+		<link
+			rel="stylesheet"
+			type="text/css"
+			href="css/evo-calendar.css"
+		/>
+		<link
+			rel="stylesheet"
+			type="text/css"
+			href="css/evo-calendar.royal-navy.css"
+		/>
+	</head>
+	<body>
+		<header>
+			<div class="logo">
+				<img src="./File/llogo.png" alt="Logo" />
+			</div>
+			<ul class="header-links">
+				<li><a href="index.html"> Home </a></li>
+				<li><a href="aboutus.html">About Us</a></li>
+				<li><a href="events.html" class="active">Events</a></li>
+				<li><a href="">Contact Us</a></li>
+			</ul>
+		</header>
+		<div class="events-whole-content">
+			<h2 class="header">EVENTS</h2>
+			<div class="calendar-container">
+				<div id="calendar"></div>
+			</div>
+		</div>
+		<div class="footer-container">
+			<footer>
+				<div class="flex-container">
+					<div>
+						<div class="logo">
+							<img src="./File/Logo.png" alt="" />
+						</div>
+						<div class="header-text">
+							<h3>TRAVEL NEPAL PRESENTS</h3>
+							<p>Going Places</p>
+						</div>
+					</div>
+					<div>
+						<div class="social-links">
+							<h3>Follow Us</h3>
+							<div class="social-icons"></div>
+						</div>
+						<div class="contact">
+							<h3>Call Us</h3>
+							<p>+977 98999999</p>
+						</div>
+					</div>
+				</div>
+				<div class="footer-text">
+					<p>
+						© 2020 Think32. Going Places. Kathmandu, Nepal. All Rights
+						Reserved
+					</p>
+					<div>
+						<a href="">PRIVACY POLICY</a>
+						<a href="">TERMS AND CONDITIONS</a>
+					</div>
+				</div>
+			</footer>
+		</div>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+		<script src="js/evo-calendar.js"></script>
+		<script>
+			$(document).ready(function () {
+				$("#calendar").evoCalendar({
+					theme: "royal-navy",
+					todayHighlight: "true",
+					calendarEvents: [
+						{
+							name: "Test",
+							badge: "08/15 - 08/15", // Event badge (optional)
+							date: ["August/15/2023", "August/17/2023"], // Date range
+							description: "This is a test event.", // Event description (optional)
+							type: "event",
+							color: "#63d867", // Event custom color (optional)
+						},
+						{
+							name: "Test 2",
+							date: "August/20/2023", // Date
+							description: "This is also test event.", // Event description (optional)
+							type: "event",
+						},
+					],
+				});
+			});
+		</script>
+	</body>
+</html>
