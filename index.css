@@ -18,6 +18,8 @@
 	align-items: center;
 	color: white;
 	background-color: #d1d3d4;
+	padding: 0 20px;
+	text-align: center;
 }
 
 .firstcontainer .content-container .header-text {
@@ -42,13 +44,17 @@
 .secondcontainer .img-container {
 	display: flex;
 	width: 100%;
-	justify-content: space-around;
+	justify-content: center;
 	gap: 30px;
+	@media screen and (max-width: 700px) {
+		flex-direction: column;
+	}
 }
 
 .secondcontainer .img-container .image {
-	height: 300px;
 	width: 100%;
+	max-width: 400px;
+	aspect-ratio: 1/1;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
@@ -57,11 +63,13 @@
 
 .secondcontainer .img-container .image p {
 	background-color: #f4f4f4;
-	color: black;
 	padding: 8px;
 	border-radius: 10px;
 	width: 100px;
 	text-align: center;
+}
+.secondcontainer .img-container .image p a {
+	color: black;
 }
 
 .secondcontainer .img-container .travel {
@@ -97,17 +105,20 @@
 .secondcontainer .header-text h1 {
 	font-size: 26px;
 }
-
-.thirdcontainer .image-container .flex-container {
+.thirdcontainer .image-container {
 	display: flex;
-	gap: 60px;
+	flex-direction: column;
+	gap: 20px;
+}
+.thirdcontainer .image-container .flex-container {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+	gap: 20px;
 	width: 100%;
-	margin-bottom: 80px;
 }
 
 .thirdcontainer .image-container .flex-container .card-container {
-	width: 350px;
-	height: 500px;
+	aspect-ratio: 1/1.5;
 	perspective: 800px;
 }
 
