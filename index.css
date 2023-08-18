@@ -3,7 +3,7 @@
 }
 
 .firstcontainer {
-	background-color: #f2f6f8;
+	background-color: #d1d3d4;
 }
 
 .firstcontainer .content-container {
@@ -17,7 +17,7 @@
 	justify-content: center;
 	align-items: center;
 	color: white;
-	background-color: #f2f6f8;
+	background-color: #d1d3d4;
 }
 
 .firstcontainer .content-container .header-text {
@@ -31,7 +31,7 @@
 	justify-content: center;
 	align-items: center;
 	border-bottom: 1px solid black;
-	padding: 60px 0;
+	padding: 60px 10px;
 }
 
 .secondcontainer {

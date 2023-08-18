@@ -1,0 +1,106 @@
+.contact-us-main-section {
+	max-width: 1300px;
+	padding: 50px;
+	margin: auto;
+}
+.contact-us-main-section .text-container {
+	text-align: center;
+}
+.contact-us-main-section .text-container p {
+	max-width: 700px;
+	margin: 20px auto;
+}
+.contact-us-main-section .contact-info-container {
+	width: 100%;
+	display: flex;
+	gap: 5px;
+}
+.contact-info-container .flex {
+	display: flex;
+}
+.contact-info-container form input {
+	display: block;
+	width: 100%;
+	padding: 6px 8px;
+	outline: none;
+	border: 2px solid rgba(0, 0, 0, 0.3);
+	margin-top: 8px;
+	font-size: 16px;
+}
+.contact-info-container form .flex {
+	gap: 30px;
+}
+.contact-info-container form .flex div {
+	width: 100%;
+	margin-bottom: 30px;
+}
+.contact-info-container .form-container {
+	width: 100%;
+}
+.contact-info-container form label {
+	color: #7dc2f1;
+	font-weight: 900;
+}
+.contact-info-container form textarea {
+	width: 100%;
+	margin-top: 8px;
+	height: 90px;
+}
+.contact-info-container form button {
+	width: 100px;
+	padding: 8px;
+	background-color: #7dc2f1;
+	outline: none;
+	border: none;
+	color: #000;
+	cursor: pointer;
+	margin-top: 8px;
+}
+.contact-info-container .info-sections .flex > div,
+.contact-info-container form {
+	background-color: #f2f6f8;
+}
+.contact-info-container form {
+	padding: 80px 50px;
+	height: 100%;
+}
+.contact-info-container .info-sections .flex {
+	gap: 5px;
+}
+.info-sections .first-container {
+	margin-bottom: 5px;
+}
+.contact-info-container .info-sections .flex > div {
+	width: 300px;
+	padding: 0 50px;
+	text-align: center;
+	color: #a6a6a6;
+	height: 300px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+.contact-info-container .info-sections .flex .contact h4 {
+	margin-top: 0;
+}
+.contact-info-container .info-sections .flex > div h4 {
+	margin: 20px 0;
+}
+.contact-info-container .info-sections .social-icons a {
+	text-decoration: none;
+	color: #a6a6a6;
+}
+.contact-info-container .info-sections .social-icons {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin-top: 40px;
+}
+.contact-info-container .info-sections .social-icons .fa-instagram {
+	margin: 0 20px;
+}
+.contact-info-container .info-sections .large-icons .fa-solid {
+	height: 50px;
+	width: 50px;
+}

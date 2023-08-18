@@ -6,7 +6,7 @@
 }
 
 body {
-	background-color: #f2f6f8;
+	background-color: #d1d3d4;
 	font-family: "Open Sans", sans-serif !important;
 }
 
@@ -17,10 +17,17 @@ header {
 	justify-content: space-between;
 	padding: 20px 40px;
 	background-color: white;
+	gap: 30px;
+	@media screen and (max-width: 550px) {
+		padding: 20px 10px;
+	}
 }
 
 .logo img {
 	height: 30px;
+	@media screen and (max-width: 360px) {
+		height: 20px;
+	}
 }
 
 header ul {
@@ -33,6 +40,14 @@ header ul {
 	justify-content: space-between;
 	align-items: center;
 	gap: 20px;
+	@media screen and (max-width: 550px) {
+		gap: 10px;
+		font-size: smaller;
+	}
+	@media screen and (max-width: 380px) {
+		gap: 5px;
+		font-size: 10px;
+	}
 }
 
 header ul a {
@@ -56,6 +71,9 @@ header ul .active {
 
 .footer-container footer {
 	padding: 50px;
+	@media screen and (max-width: 550px) {
+		padding: 40px 10px;
+	}
 }
 
 .footer-container footer .flex-container {
@@ -65,8 +83,14 @@ header ul .active {
 	align-items: center;
 	padding-bottom: 30px;
 	border-bottom: 1px solid black;
+	@media screen and (max-width: 768px) {
+		flex-direction: column;
+		gap: 30px;
+	}
+	@media screen and (max-width: 550px) {
+		font-size: smaller;
+	}
 }
-
 .footer-container footer .flex-container > div {
 	display: -webkit-box;
 	display: -ms-flexbox;
@@ -79,6 +103,12 @@ header ul .active {
 
 .footer-container footer .flex-container .logo img {
 	height: 100px;
+	@media screen and (max-width: 768px) {
+		height: 60px;
+	}
+	@media screen and (max-width: 445px) {
+		height: 40px;
+	}
 }
 
 .footer-container footer .flex-container .header-text p {
@@ -96,10 +126,19 @@ header ul .active {
 	align-items: center;
 	margin-left: 40px;
 	margin-top: 30px;
+	@media screen and (max-width: 768px) {
+		flex-direction: column;
+		gap: 30px;
+	}
+	@media screen and (max-width: 550px) {
+		font-size: smaller;
+	}
 }
-
+footer .footer-text p {
+	display: inline-block;
+}
 .footer-container footer a {
-	text-decoration: none;
+	text-decoration: underline;
 	color: black;
 	margin-right: 40px;
 }
