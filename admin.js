@@ -8,7 +8,7 @@ import {
 } from "https://www.gstatic.com/firebasejs/10.2.0/firebase-database.js";
 const appSettings = {
 	databaseURL:
-		"https://travel-a670d-default-rtdb.asia-southeast1.firebasedatabase.app/",
+		"https://travelnepal2k80-default-rtdb.asia-southeast1.firebasedatabase.app/",
 };
 
 const adminUsername = "0949d320001cb5352ed16ebff07c9304";
