@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta
+			name="viewport"
+			content="width=device-width, initial-scale=1.0"
+		/>
+		<title>Admin</title>
+		<link rel="stylesheet" href="global.css" />
+		<link rel="stylesheet" href="admin.css" />
+	</head>
+	<body>
+		<nav>
+			<button id="add-event-btn">Add Event</button>
+			<button id="events-btn">Events</button>
+		</nav>
+		<div class="add-event-container">
+			<div class="form-container">
+				<h1>Add new Events</h1>
+				<form id="add-event-form">
+					<input
+						type="text"
+						id="event-name"
+						placeholder="Name"
+						required
+					/>
+					<input type="date" id="event-date" required />
+					<textarea
+						name="description"
+						id="event-description"
+						cols="30"
+						rows="10"
+						required
+						placeholder="Description"
+					></textarea>
+					<button type="submit">Add Event</button>
+				</form>
+			</div>
+		</div>
+		<div class="events-container hide">
+			<ul id="events-list"></ul>
+		</div>
+		<script src="https://cdn.jsdelivr.net/npm/uuid@8.3.2/dist/umd/uuidv4.min.js"></script>
+		<script
+			src="admin.js"
+			type="module"
+			crossorigin="anonymous"
+		></script>
+	</body>
+</html>

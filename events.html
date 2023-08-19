@@ -24,6 +24,7 @@
 			href="./File/Logo.png"
 			type="image/x-icon"
 		/>
+		<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
 	</head>
 	<body>
 		<header>
@@ -80,29 +81,10 @@
 		</div>
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 		<script src="js/evo-calendar.js"></script>
-		<script>
-			$(document).ready(function () {
-				$("#calendar").evoCalendar({
-					theme: "royal-navy",
-					todayHighlight: "true",
-					calendarEvents: [
-						{
-							name: "Test",
-							badge: "08/15 - 08/15", // Event badge (optional)
-							date: ["August/15/2023", "August/17/2023"], // Date range
-							description: "This is a test event.", // Event description (optional)
-							type: "event",
-							color: "#63d867", // Event custom color (optional)
-						},
-						{
-							name: "Test 2",
-							date: "August/20/2023", // Date
-							description: "This is also test event.", // Event description (optional)
-							type: "event",
-						},
-					],
-				});
-			});
-		</script>
+		<script
+			src="events.js"
+			type="module"
+			crossorigin="anonymous"
+		></script>
 	</body>
 </html>
