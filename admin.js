@@ -11,6 +11,39 @@ const appSettings = {
 		"https://travel-a670d-default-rtdb.asia-southeast1.firebasedatabase.app/",
 };
 
+const adminUsername = "0949d320001cb5352ed16ebff07c9304";
+const adminPassword = "717160f7801ad0ef175847b956f6566a";
+
+function calculateHash(input) {
+	const hash = new SparkMD5.ArrayBuffer();
+	const encoder = new TextEncoder();
+	const data = encoder.encode(input);
+	hash.append(data);
+	return hash.end();
+}
+
+document
+	.getElementById("login-form")
+	.addEventListener("submit", (e) => {
+		e.preventDefault();
+		const username = calculateHash(
+			document.getElementById("username").value
+		);
+		const password = calculateHash(
+			document.getElementById("password").value
+		);
+		if (username === adminUsername && password === adminPassword) {
+			document
+				.getElementById("login-container")
+				.classList.add("hide");
+			document
+				.getElementById("content-container")
+				.classList.remove("hide");
+		} else {
+			alert("You Have entered wrong details !");
+		}
+	});
+
 const app = initializeApp(appSettings);
 const database = getDatabase(app);
 const events = ref(database, "events");

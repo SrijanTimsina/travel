@@ -69,3 +69,27 @@ nav button:hover {
 	padding: 8px 10px;
 	height: 100%;
 }
+.login-form {
+	width: 100%;
+	max-width: 400px;
+	margin: auto;
+	gap: 10px;
+	display: flex;
+	flex-direction: column;
+	margin-top: 50px;
+}
+.login-form input {
+	width: 100%;
+	border: 2px solid #7dc2f1;
+	padding: 6px 10px;
+	outline: none;
+}
+.login-form button {
+	padding: 8px 10px;
+	margin-top: 10px;
+	cursor: pointer;
+	border: 2px solid white;
+	background-color: #7dc2f1;
+	border-radius: 100px;
+	color: white;
+}
