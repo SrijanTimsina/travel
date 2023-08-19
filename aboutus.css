@@ -35,19 +35,7 @@
 	font-weight: 900;
 	margin-bottom: 30px;
 }
-.about-us-info {
-	display: flex;
-	padding: 0 20px;
-	gap: 50px;
-	margin: auto;
-	/* width: max-content; */
-	margin-top: 60px;
-}
-.about-us-info .info-section {
-	background-color: white;
-	padding: 15px;
-	max-width: 250px;
-}
-.about-us-info .info-section h3 {
-	text-align: center;
+.about-us-whole-content .info-text {
+	margin-top: 15px;
+	padding: 0 50px;
 }

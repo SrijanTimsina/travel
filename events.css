@@ -6,3 +6,8 @@
 	margin-bottom: 10px;
 	letter-spacing: 3px;
 }
+.events-whole-content a {
+	color: black;
+	margin-top: 10px;
+	display: block;
+}
