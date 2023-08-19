@@ -40,7 +40,10 @@
 	margin-top: 50px;
 	margin-bottom: 50px;
 }
-
+.secondcontainer .title-text {
+	margin-bottom: 30px;
+	text-align: center;
+}
 .secondcontainer .img-container {
 	display: flex;
 	width: 100%;

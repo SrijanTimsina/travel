@@ -1,0 +1,31 @@
+.food-main-content h1 {
+	text-align: center;
+	margin: 10px 0 30px 0;
+}
+.food-main-content {
+	padding: 0 10px;
+}
+.food-main-content .dish-whole-container {
+	display: flex;
+	width: 100%;
+	max-width: 900px;
+	margin: auto;
+	background-color: white;
+	border-radius: 100px;
+}
+.food-main-content .dish-whole-container img {
+	max-width: 200px;
+	height: 100%;
+	aspect-ratio: 1/1;
+	/* height: 100%; */
+	border-radius: 50%;
+}
+.food-main-content .dish-whole-container .desc-container {
+	padding: 20px 60px 10px 20px;
+	display: flex;
+	flex-direction: column;
+}
+.food-main-content .dish-whole-container .desc-container h2 {
+	margin-bottom: 20px;
+	text-align: center;
+}
